@@ -1,0 +1,1435 @@
+output-193.png: Stace
+
+B(2)= [ACo)-Al2) Wy? =[4-07 1-4
+B(3) = LACI)-A(3)3Wo?= 1-07 [-)
+
+po) = Caco) + ADI =4
+BU1)= AM)tAGI= 1,
+
+B(4) = AC4t AlO)= 140
+B(5) = ALS)T ALT) = 2-5 At
+
+BCE) = [ A(4)- ALE) I Wy” = C1701)
+
+B(T)s LACS) -ALP Iw = (528 ‘ -@1B
+(p= 0 ve (S--33) (D+ 779
+STAGES
+
+X(o) = Bl) + BUD = 14+1=2
+
+XC4) = [Blo)-BEIWe’ = C1-t3[1))=0
+
+Kea) = CBa)t BIIIT= 4-) -
+
+Key = L B(2)- Ba) I We" = C1tVIC4) = V4)
+
+key = eure 4 BIB
+
+w
+
+< Qa .
+cocar- csv? = CAS HS I 019 C$ 15H
+
+xare Besecn= (4-2-8 7
+
+AS)
+
+CT) = -BCT)IN = yy.
+ACT) = £6(6) ° CtZy+y Pad
+
+CB) The Main advantage of FFT VS. DFT iS tno amount of Hme to compule.
+complexity foy FFT is £109," VS. N2 for DEF, wn
+
+output-187.png: 4. Using a 4-bit ADC quantize an analog input ranging from 0 to
+5 volts.
+
+How many quantization levels.
+
+What is the resolution of the ADC.
+
+At an input of 3.2 volts what is the quantized value.
+
+At an input of 3.2 volts what binary code is produced.
+
+At an input of 3.2 volts what is the quantization error.
+
+b
+a i> as ot +64) ot
+
+cB) range _ Vienort = Vein -
+
+Cao TP
+
+= 0.07936 V = 79.36 mV/cep
+
+(<a)
+0). y at i! 40 =3249
+79 64 pw 4H 2 I
+oot 0009
+ce) €4(M) = %qin)- HONY
+Ay 3-2V, be
+
+Ld) = (40)00.07936) 3AT44
+ey (hn) = 3.2 - 3.1744 © 0.0266
+
+max error: 42. 9 9396 so, &9(3.2)= 0,0256
+
+output-178.png: Problem #4
+Matlab Code
+
+and call its
+N1, Fel);
+
+fdesign. lowpass ('N,
+design(hl, 'butter');
+
+Hdl.sosMatrix; % Create uad coeffi
+
+h2 = fdesign. lowpass ('N
+Hd2 = design(h2, ‘bu
+sos2 = Hd2.sosMatrix;
+ar an impulse sigr
+X = zeros(100,1);
+X(1,1) = 1;
+
+halfFilt = sosfilt(sosl,X);
+
+impulseResponse = sosfilt (sos2,halfFilt);
+figure
+
+stem(impulseResponse) ;
+
+title('Impulse Response (2 Cascaded Biguads)")
+sumIIR sum (impulseResponse)
+
+% DL TL Tran
+simOut sim('Cas
+figure
+stem(impulseResponse_Cascade_DII_Transpose);
+title('Impuise Response (Simulink Stem - Impulse R
+
+and call its BUTTER method.
+N2, Fe2i;
+
+ponse
+
+Impulse Response (2 Cascaded BiQuads)
+
+10. 20 30 40. «50 60 70 80 90 100
+
+output-150.png: EE410 — Digital Signal Processing Alana M. Soehartono
+
+HW6.4.1)
+
+x3 = {4, 11, 20, 19, 13, 8, 2, 5.3E-15}
+
+Filtering with N= 8
+
+20 $= —
+
+x,(n)
+
+e i Linear filtering with DFT and IDFT, N= 8.
+
+HW6.4.2)
+
+Filtering with N = 16
+20 oe =— —
+
+18}
+
+16
+
+Figure 2 - Ui
+
+ar filtering with DFT and IDFT, Ns 16.
+
+output-144.png: Alana M. Soehartono
+October 17, 2013
+EE410 — HW#5
+axis off
+axis imag
+title({'¢
+end
+
+sd Image with b =',num2str (bits) 1);
+
+clear;clc;
+€ mal
+1/f£; dt = 1/15;
+
+t = O:T:1;
+x = sin(2*pi*t);
+
+% Quantized
+b = 8;
+[I, Q]= biquant (b,-10,10,x);
+
+createfigure(t,x,Q)7
+
+r=
+
+= sinc((2*pitb + To + x));
+r= (x - min(r))/(max(r) - min(r));
+
+= bigtdec(b,-10,10,1);
+q = (q - min(q))/(max(q) - min(q));
+
+figure, stem(q); hold on; plot(r, Ura) 7
+
+function out = Decim(x, F)
+8 The purpe
+
+of this function is to decimate a signal by an int value.
+
+% INPU x - The input v.
+
+FE - In
+
+a
+tion factor
+
+= Written By:
+
+for M = l:size(x,2)/F;
+
+ind = (M- 1)*F + 1;
+
+out(1,M) = (x(1,ind) + x(1,ind+1))*(1/F);
+end
+
+output-018.png: SEPT. 19, 113 SAMPLING
+
+cn)
+
+bd
+a.
+bu) ia image
+a wa, | {ave | as Le Reconstruction Yo tt)
+2G, OPAMP converter ect sion
+4
+10
+
+consider an impulse train
+
+Pity) B Set-nT
+Nz-O
+
+we want +> sample a function
+
+xt)
+
+Xslt)= Kit). B §(t-nT)
+Muldply tn HMe- domain
+cOMVOIUHON Ih Frequency domayn
+
+ACO = XEN" HB SCFMfs>
+nea
+
+©
+R= A xep-ngs)
+nec
+U0)
+4
+we see replicas in
+
+ne frequenoy domain
+
+CI | +
+
+5 -ts4fmax ~Fmax Fmax f5-Snase f+ Fax
+
+fs-Smax
+
+EX. XCF = 6 cos (21-1000)
+¥5 = 8000 He
+
+he
+
+= 1000 1006
+
+For replicas, sampling Fast enough wat ho aliasing occurs.
+
+2.0 eeplicas
+
+Lili it,
+
+goon 77000 71000 1000 00 = 9000
+
+
+output-024.png: OCT. 3,3
+
+4 Finish Chpt.&
+
+2) ReOd chp7-DTFT
+3) EXAM 1 iM 2 WEEKS > 10/17
+
+1. HC), DIFF. e@
+2. DTFT, Hw)
+3. sampling
+4, Quantz aH on
+5. reconstructon
+Quantizarion
+WA
+vigital
+Disorete
+‘vaiues
+Quantz:
+Leads &
++n
+common Range
+0-5 Vols eX. Obits +255
+-3-G volts 0-256 (Mh
+o-1b Vv 0-5 im,
+4-z0 mA
+antzato
+shy univolay
+of Zz:
+= Za5* 19.6 my
+32 vit Alo Hor Software
+We eEWbedded Presented
+priver for ps
+v7 bo
+dv00 0000 o ne
+oot 19.6 my Floay
+double
+0000 = gvoot0 2419.6 nV
+
+255x% pes
+
+Bipolar,
+ieee
+
+a 256 = 39.06 wv
+
+“Two complement form
+
+we have 127 bits €127)( 34.06 mv) = €96
+
+b= _5-t-5)
+
+765 = 30-218 mV
+
+39.215 ¥ 127 4.99
+
+
+output-030.png: DISCRETE FOURIER TRANSFORM
+piscrere in @ Fre@. Xck)
+
+@ time xcny
+so we are intme sequence domain
+
+EXPONENTIAL FOURIER SERIES
+
+Py -S tle oes
+te Ef ae ae fora,
+ts : W = 20
+similar 40 Qn, bn Periodic To
+In bE234
+Periodic
+T
+To ©NT
+
+(0), ..., XEN) form samples
+
+Je
+
+' “J
+Cet HB xeMe T
+Ei aco
+wt -j2mEW/N
+ee FS rome
+lhe -DLe eo
+at samen iam
+BT s acny®
+N 4 aways 4
+
+Ceey = Oe reviodic Frequency pomain
+
+{Crt
+
+i all
+
+Bh2f, fo Fo 2fo 3fo Fsle Repeating
+Fy= NPD
+
+ms
+
+Assume Periodic
+
+nel “SUT M AL
+XCK= NCee B yxeme
+W=0
+
+civen xem - Find ane E™ vaiue
+be DET
+
+nel IZ
+X(Ar= 4 acme
+neo +
+‘Twldd\e Factor = W
+FOY Ke 0)1)2...) Net
+
+12
+
+NN = N? operations
+
+output-031.png: Ct0/10/13)-PE.2
+
+Feet He —N=t0 poinis
+
+75 TOTS
+
+oe Reine
+
+inte Correspovids to 1 He units,
+
+fs 10FH2,
+
+of:
+
+N=1024
+
+arte ne
+
+Fmay= MBF v0 ne
+
+Window FUNCTION
+
+SO
+
+Repeay Puncions
+
+We choose an N when doing a DFT.
+
+windowing
+
+Xwend> AcCnywen) celement-wise)
+
+1€ window big enough, end at Zer to avoid discomHmuous jump.
+cTiangle window)
+
+Wre y- tan-nell
+
+N+
+
+Hamming window
+
+Way = 0-94 - 0.46 cos ( a)
+
+Hanning window
+
+WN + 0.5- @.5c05 (aS
+Nt
+
+FFT
+1) pedmation i time
+2) pecimayon In Frequendy
+
+FFT- Fast
+
+DET- N? operations
+Nlogend
+
+vedmanon th Frea:
+XCAR ig gpiit into two Ports
+
+enlz)-1 kn of en eulley ¢ril2d-1
+(A= Z Few POON as ot
+
+Pa
+Z gent Sy,
+NeWle ae
+en oon . Gey 32TH fs
+Wy 7 gr est Wy = € ~ 7
+(npr!
+
+em
+x = oy a “
+ck Ta, creme xe 31) 7 Wy
+
+—~———
+reaueed by ¥
+
+output-025.png: 4a? Az
+
+re Pty? 32”
+
+sane = Px
+Pq
+signa) roe
+Pye =a CACOS (264) Ad
+2 pt
+1
+: a \, FC14 cos (2Aytr) dt
+= Ae
+ze
+sQne=
+2b
+=22
+
+SQNR CABI= 191094, (SQNRD
+
+= 1010945 (3) + 1010945 (2°?)
+
+1-76 + 2610949 (2") = 1.764 201099129
+
+=17 + 6.0zb Cde4
+where b 2 bits
+
+statistical signals
+
+SANR = 6-02 +16.81~ 20109 (PA)
+OK
+
+sampled, simulation bata =
+
+MI,
+SQne = ¥ a vu
+eo
+
+12S eteny
+n=o
+KNOW Your xi)
+expenimento)
+
+x
+SQNE= 4.774 20104 14 ( lmer) + 6.02b
+
+Xe) = 4.5 sin (2711006)
+Fs = 9000
+Range = -5.5
+
+SQNR = 1.76 + 6.026 = 25.94 de
+
+output-019.png: pass signal
+Mildew Loitham -F. dus @ ao Com
+
+Fe 228 ware Oedkn. yum eolve Dee
+Fe Fen, FH yitei xu @ uw. edu,
+
+integer Band positoning
+
+SEPT. 26,13 — BANDAASS SIGNAL
+
+omiginal spectruy, — @-8aNawlatn
+
+riker everywhere but band pass
+
+8
+—
+ft A 2Fu 4 $, Not optima)
+He 2B ZF
+— > £ Fs
+8 2 38 4B ve
+
+choose ot least
+wlee ¢ne bara width
+40 avoid aliasing.
+
+tegen
+Bona positioning
+
++—+
+-4B -28 -28 -B
+
+we con shift w/ He impulse vain
+
+ad Fur 4B
+“3p -23 -B 6 28 38 4B 5B cp
+
++ +
+~¢p -58 -48 -38 -2B -B B
+inverted aFs
+v
+noninverted
+"spectrum
+4 2B as 66 7B 2
+~2Fs
+th 1 [ +#—+ J\
+fe > 26
+
+number of bands Kmax
+
+output-145.png: Alana M. Soehartono
+October 17, 2013
+
+EE410 — HW#S
+
+function createfigure(X1, Y1, Y2)
+SCREATEFPIGURE (X1, YL, ¥2)
+
+d by MATLAB on 17-Oct-2313 09:0
+
+Create figure
+figurel = figure;
+
+ts (Oral: (abe fei
+axesl = axes('Paré
+box(axesl,'on');
+hold(axes1,'all');
+
+',figurel);
+
+& Create st
+
+Btairo xd o, (colonu ail <0) Oj7a b
+
+'Displa
+
+% Create legend
+legendl = legend(axes1,
+set (legendl,...
+
+' it ', [0.544850316478987 0.786027167277167 0.316846986089645
+0.100961538461538] );
+
+function [X] = dtft(x,n,M)
+
+e Fourier Transform
+
+neles
+
+Written
+
+Septembe
+sE410 - €
+
+x* (exp (-i*pi./M)).*(n'*k);
+
+output-151.png: EE410 — Digital Signal Processing Alana M. Soehartono
+
+HW6.5)
+Original Signal x(n)
+1) ~ = ++ 5
+0.9) |
+|
+08
+[ |
+07!
+06 I |
+£05
+0.4 |
+| |
+1} |
+0.3; 4
+02 i
+| |
+0.1 i \
+| /
+0 _ L Z L aN L Hi
+-100 -80 -60 40 -20 0 20 40 60 80 100
+Index, N
+Figure 3 - Original signal x(n).
+DFT Magnitude of X(k)
+r - | - 7
+3- ie
+| : ee lll fil |
+40 60 80
+I
+
+“0
+Index, N
+
+Figure 4 - Magnitude and phase plot of the original signal x(a) with DTFT, N 200.
+
+output-179.png: Simulink Direct Form II Transpose Cascade System
+
+ae impulseResponse_Cascade_DIl_Transpose
+i <
+Gaintt To Worspace
+
+Discrete
+Imputse
+Unit Delays] —
+
+Unit Delay? Unit Betsy :
+
+we Gait
+
+Gaints Gairg
+
+Te ed (Simulink Stem - Impulse Response)
+100; — . = : ——
+
+
+output-186.png: 3. An analog signal
+x, (tf) = sin(480nf) + 3sin(720nt)
+is sampled at 600 times per second. Determine
+a) the Nyquist sampling rate for x, (¢) .
+b) the folding frequency.
+c) the resulting discrete time signal, x(n).
+d) Is there aliasing ?
+
+Fe = G004= G00 HZ
+
+Co Fy = 2F mat Fy= 202 oaone
+Fmax= Fe foe 120 ,
+Zz = 360He
+
+Fy = 2(36b) H2 = 720 Hey al
+
+> F ee oy) a
+fe gq = “y= sone yy
+
+we
+
+CO. xan = Fal) © 4a (FE) oe Abel by |
+w a bey oer
+(22 y
+
+: 240-4 tt \n
+sin-an (240 yn s sin2t ( Gop)
+. smemsil
+
+2 — ys sinen (Ahn ~~
+7
+
+Fs
+
+F, pie $0 for F, 1 2ye 2
+wewant Frc zs soto fe, Cie) =
+xeny= sinat (s)nt asmem(B)"/
+’
+-/
+nd jerm where ford since tnisis greater
+
+CD) aliasing will occur for 4¥
+than Fs. we can avoid aWasing wy setHng Fr <5S , whieh Is
+
+reflected Inthe Fina) result OF CC). /f
+
+output-192.png: 2. Compute the 8 point radix-2 decimation in frequency FFT for
+the given sequence. Show all work. No credit for just the
+answer.
+
+x(n)=[1 10 0 0 0 0 0]
+
+a) Show the results of each stage of the FFT calculation.
+b) What is the main advantage of using the FFT over DFT ?
+
+%O)
+
+ACO) = Koy + H(A = 1408! A) = £-x(2)- 2(6) I We? = CoV L3)=0
+AUD = 4H) +4HL5)= [4041 ACT) = 0 X(3)- X07) Twp? = CO) Wo” = 0
+AC2)= 42) + KC) = 0
+
+ALB) = GF KEN =O
+
+ACA) = CK(0)-FLAIT Wy = VC1)=9
+
+AS) = EKD~ KSDI vgs 102% 52) 7
+
+oe
+
+output-184.png: 1. Given the following difference equation
+y(n) = 0.6 y(n -1) -0.08 (1 — 2) + x(1)
+
+Find
+a) The Pulse Transfer function H(z).
+
+b) The impulse response.
+c) The step response.
+
+Ay
+Yiars 06 [2721 - 0.0e2? Yee) +X@)
+- shi erty
+ysing Time- sviPing Prop . way 2 X@
+wunek) > 2 lz) @
+
+Yc2z2) [1-0.627' 40,0927? 1 = X@)
+; /
+
+A es
+
+H(z) a (271-04) C2"-0.2
+
+“ae
+
+2
+0.221042) + 0.082 #
+
+= H(2)2 ————-—
+oa 7” Grgetyu ge)
+
+ge ae (6
+c2"-0.4) 1s. 9. = 708
+5 1. +F +54
+= pg aease! | 02 17 52t
+cece 6
+
+fey ncn = 2tGHENG
+
++, 12\| 714)
+using Table 33 z
+
+mum? Fae
+m= F(Z)" 2)”
+5 tes eoc: \zl7 lal 3) -(5) Ju
+: Fw cash ucny + 2; Mm
+
+coy The step response is XZ) * v/a
+
+yes ——
+are ow %
+Yiz): :
+C1-2°7 1-2 Bet)
+use RFE.
+ym): p 28
+
++ ais 743)" um)
+
+output-190.png: 1. Given the following sequence
+
+x(n)=[1 1 0 0 0 0 0 Oj
+
+a) Compute by hand the DFT showing all terms. No credit
+
+given without all work shown explicitly.
+b) Compute and sketch the Magnitude of the DFT.
+
+c) Compute and sketch the Phase of the DFT.
+
+0TH /%
+
+uw 7 “S27 K/@ 47012 -..57
+kis & Xone ’ id
+n=o
+. : ; am
+-)(0/9) oy T/4 oyu mje sole pel + 0e
+= (we + cae v0G + 0 :
+3127797 “ants
++ 0€ + oe
+ar) oa
+_ynn]4 AD A = epse-jsin®
+Ba ©
+
+OIE)
+0) tly © = 2 c
+
+“37/4 Bz seo?
+Xap tte = (Gandy eps
+IT/2 .
+Yi = 44 e Fi-j
+3T/4 S a
+¥O)=e 44 e “(1 -2)-\2 0.24% -\O.70F
+-ju
+M4) = ate Fo ce
+-j5t/4
+B S Boe -
+K(5) = 140 = C1244 ~ 0.0934 0407
+7 -33Me
+Ace) rte” Sant
+a er ee
+Kemye 414 = (Bt tgs © v7 +0707
+
+(3) magniwude FOr zextiy
+les (ey? tae
+kms 2
+
+ne) a A) %m(4) = © Xmlor®
+Kon) = 1.842
+
+Km (g)* 0.765 Ym (3) = 0.768 CAE Ae
+
+output-147.png: EE410-001 FALL 2013
+Digital Signal Processing
+Homework 6
+Problems from course books:
+TB = Text Book = Digital Signal Processing, 4" Ed.
+John Proakis & Dimitris Manolakis, Pearson Prentice Hall 2007.
+MB = Matlab Book = Digital Signal Processing using MATLAB,
+3" Ed.
+Vinay Ingle & John Proakis, CENGAGE Learning, 2012.
+1. TB7.8
+2. TB7.9
+3. Use the data set from TB 7.8 and perform linear filtering.
+
+4. Use the data set from TB7.8 and perform linear filtering with DFT, IDFT
+
+4.1. With zero padding to N=8.
+4.2. With zero padding to N=16.
+
+5. MBP5.10.1 Do both the DFT (N=200) and DTFT and plot.
+
+Due: 11-5-2013
+
+output-153.png: EE410 — Digital Signal Processing Alana M. Soehartono
+
+APPENDIX)
+
+EBEA10 - HW #6
+
+Written By: Al
+
+sing
+waukee
+
+clear;cle
+
+%% Problem
+
+~padding
+8;
+
+x1(:,N)
+x2(2,N)
+
+daft (x1);
+
+x1
+X2 = dft (x2);
+
+* IDFT
+
+x3 = (1/N) *idft (X3)7
+
+Index = 0:N-1;
+
+figure, plot (Index, abs (x3))i title ('Fi
+
+fering with N= 8');
+xlabel('Index, N'); ylabel('x_3(n)'); axis tight;
+
+xl(:,N) = 0;
+
+dft (xl);
+X2 = dft (x2);
+
+s E ering
+X3 = X1.*X2;
+
+8 IDF?
+
+x3 = (1/N) *idft (X3);
+
+Index = 0:N-1;
+
+figure, plot (Index, abs (x3) ); title('Filtering with N = 16');
+
+output-033.png: MATERIAL AFTER TEST 1
+
+OCT. 22,13 FAST FOURIER TRANSFORM
+
+N= Number of samples
+
+computaHon cos:
+nN? oFT
+
+Sogn as
+
+COOLEY- TUKEY IMPLEMENTATION
+
+Nt kn
+Xao= 'Z xem Wy
+neo
+
+SPIFinto +Wo*
+
+tert 4
+X (4) = m Ga kewley (Mle)-+
+Z xamwy + KNW Wy
+nro We n/2 nzo
+hy iz 0Nl2)/y
+Wa e@
+rn (nfey-4 :
+MDS BZ (xem + Ca cent Zu
+a Zn
+zo
+ben
+overt . 2m»
+yeam= 2 Cxcmre xentZ)) Wo
+fiz0
+odd. (ney n2mn
+xeamaty = FC xem KM tE)) Wy Wy
+nz0
+
+DFT Even N/2 points CS compiex muiteti catons
+
+*
+DET odd Wy  % poinis
+
+Neg N7=64
+(5+ afr 5+ (8)?
+
+= 1644+ 16 36
+
+Be Cy complex MUHs.
+
+”
+xent Sy w,
+
+en
+Ny
+
+P64
+
+output-027.png: OCT: 8, 2013
+
+1) Recon sHuction
+2) pet CCMpt-7)-9 FFT ConPt-8)
+3) Exam ~ 10/17
+© HZ), PRE } signals @ systems
+@ over, cer
+® sampling
+@® quantizavon
+@ reconstucton
+
+RECONSTRUCTION — Gem XCM) = Xq CHT)
+
+Fs Xq Frts) Fs Kae FrFs)
+
+oTrtT
+
+GANT- 6.120 <j2T1 F/ Fs
+
+2,
+Xiry= Bo xeme
+conttnuous”?
+
+Xa(t)
+
+crT
+
+Crys t zs
+Kathe txur Fle B
+Ts Ves
+
+Fly ‘
+sone
+inverse Xa lt) Kalrye dr
+cer
+“62
+
+SHANNON's RECONSTRUCTION THEOREM (ideal Recon)
+
+Yate = B Fonrosmel (My (t-n00J
+rent
+
+nc goes FO 1 :
+consider = MoT 2 TMinen avg.aves ©
+
+°
+Ka MoT) = ZX CMoT) C1)
+neo
+
+= XMe) value at we Point
+
+output-026.png: EXAMPLE * speech
+
+45 = Okhe
+“5-5 range
+SONR= 4.974 6.02°4) + 2010045 ( 7) 715 46
+
+Yems
+
+= 0.263
+"ymax
+
+USINg MATUB > 15.01 ap
+
+RECONSTRUCTION
+3 Xen S Ct-ntey
+
+LoW-Pass Finer
+yet: 2
+REO= SS xen SINC CFs lt - hTs)>
+"-@
+GA.17-6.1.09
+even Xen)
+~
+OH! on! NDOO!
+using oret,
+a 21 n/e5
+XCHE Zt kee
+Neco
+
+using continuous Fourier Transform ,
+Fslz
+
+serret
+Xa ttre | kee toe
+Fs
+la ne
+SeTIF (t-1/ sy
+Yattye + PA: teensy par
+jen Ct-W/Fs)
+Fs Jem ¢ ele
+simpll reation
+Foot : sam CFs] 2) (4-7) Se Vp
+’ = edltrcenry
+~ % sin (1) (4-07)
+Say CA Cem)
+sine funcHon
+NEXT MME: DET
+
+He)
+
+output-032.png: 
+output-152.png: EE410 — Digital Signal Processing
+
+Alana M. Soehartono
+
+DTFT Magnitude of X(k)
+
+= \ |
+| |
+:
+| —— oe |
+
+be es
+
+3 -2 4 0 1 2 3
+
+oO
+DTFT Phase of X(k)
+
+otk)
+
+‘adil A eA
+
+tl a hi
+
+1 — a a
+-1 0 1 2 3
+
+Figure $ - Magnitude and phase plot of the original signal x(n) with DET, N = 200.
+
+output-146.png: Alana M. Soehartono
+October 17, 2013
+£E410 — HW#5
+
+end
+
+output-191.png: £2, 1.842% 2, 0.76% OF 6.765, S2, 1.842 J
+
+oy = aan Cp)
+
+aa
+40 Xp la) = tair'(o) = 6
+
+Wi
+fo (6) = san! (ST) = cane
+
+Xo (b= 4an"(1)= 4 ~ 01
+elt) = ran (Qty - 0393
+1-107
+
+= 4an(~2O7y. 0.493
+Fe (= 10nr2o) =
+Fe (2) = tawie=ty = 7 o -0.196
+
+Fela) = ral, 1.478
+
+por J, TPtT
+
+L
+-Xti}
+
+L
+mit
+
+we
+
+ta
+
+mau
+
+
+output-185.png: 2. a) Show that the following sequence
+
+<<
+can be represented in closed form as, for ja<]|
+
+2
+(l-a)’
+
+b) Determine the Discrete-Time Fourier Transform in closed form
+
+for the following sequence. So
+syn Bee cs ornt ante ant...
+¥r0
+¥
+- n Pee oa 2 4
+x(n) = n(0.9) u(n) KS, = ¥ BF otnt4 er taxis...
+SKE RH eT)
+ae
+4
+CAD aA na" Spt) g. FEL 1%
+Neo using cum property, Where r= ot and ¥en -X%
+pee aba
+Dn COI due Fi i q+ 2.
+For tro orgy * c wr
+Z crea? a-ky
+where £ ob a&- 0b) =o
+= b+ Cod B-14q%%"'
+= cy Co-1)?
+-A>? un
+re Here | meant to include Ame Pack tn at ost, oi |
+which inanat case whens say a=-t we get © ane]
+cB) xem = 0 60.9)" um) natumy o> a-aey?
+e -jwn 92°!
+ju0 J Ges ou
+. me ;
+xte) é (1-0.92°7)?
+a own we = h t cnerny 19 rt?
+= ZnGay Ce) = 3 cre, Tener
+For 7erms, =m a cr-17®
+similarly Using the property above, "| | meant +0 multiply oD es
+nc0.4) <r 13.0-9 o
+0.0 +fncp- iat —— gecause 0,9 =o
+
+G 5
+B® xc: Ancogter™ - .
+ho G-0.9e *)
+
+output-181.png: e (6B)
+
+Magnitude Respons
+
+rad/sample)
+
+Normalized Frequency (=
+
+output-195.png: bo = 4
+
+\——> cn)
+2
+wom: - F gp win-et XCw)
+
+=r
+
+OH, WEN-1)~ A.W 2) +xcw)
+
+wZ)= ~) 277 S ~
+1etwezy-4 2? wee 4 x2)
+
+output-142.png: Alana M. Soehartono
+October 17, 2013
+EE410 — HW#5
+
+clear;clc;
+lena512 double (imread('ienaS12.bmp'))7
+
+ltering row v
+lena512 (256,
+firl(15,0.5);
+= filter(b,1,x)7
+
+Q
+q
+
+9
+
+TFT of the filtered row
+-length (g) /2:length(g) /2-1;
+n(end); k = -M:M;
+
+(pi/M) *k;
+
+dtft(g,n,M)7
+
+q
+
+QED &
+
+DTFY of the original row
+-length(g) /2:length(g) /2-1;
+= n(end); k = -M:M;
+
+(pi/M) *k;
+
+= dtfit(x,n,M);
+
+MEE Oe
+i
+
+figure, plot (w/pi,abs(X)); title('Half-Band Filtered
+
+ation (written
+
+as separate f
+
+mare with MATL
+imate (x
+ig,
+
+b ye
+
+figure, subplot (2,1,1); plot ((yl));
+subplot (2,1,2); plot((y2))i
+
+een de
+
+2
+
+imated and or
+
+
+output-156.png: EE410 — Digital Signal Processing Alana M. Soehartono
+
+end
+
+function fs CentreShift (f)
+
+% The purpose of this function is to a a 2D image.
+
+Input image
+Centre shifted image
+
+[P Q] = size(f);
+
+for y = 0:P-1
+for x = 0:Q-1
+fs(y+1,x+1)
+end
+
+u
+
+£(yt1,xt1)*(-1)*(x + y)i
+
+end
+end
+
+DIET
+si
+
+W
+
+x*exp (-jén'*w);
+
+output-036.png: 4M = £2,1,2,19
+
+baihiellid Oa oe
+
+3
+Ya O)=COnV = AZ x,CM) ¥2C-M)
+nro
+
+gO) = C2) C1) + C27E1) + C97C2) + CINCAD F 14
+
+3
+Ha 2 xyemy teci-ny
+nro
+
+F C2dCD + CADCADH C2LAD + (3)L1D = 16
+2
+
+%g(2) = nZ, NaN) Ke (2-0 = 14
+Fo
+
+3
+%5(8) = J Kym) F2l3-M) = 16
+nee
+
+%3Cn) = (14,16, 14,76)
+
+er 2 “S2THK/4
+W100) = & aren &
+nso
+-i 16/2 ointe once
+= 2+ 6 + 2e +e
+
+= 16,0209
+
+Yet = [ 10, -2+j2, -2, -2-j2)
+
+STR 2 ame sate
+1+ 28 + 3e + 4e
+
+Xs) = £ 6p 0,-4,0)
+
+IDFT
+sami e/4
+
+“smn
+We gg Yate é = fc)
+70
+
+= 0 14, 16, 14,163
+circular convolyHon nice.
+Linear Filtering
+
+een) lenge
+
+Hiw)
+FIR Filter hen) venginM
+
+1
+yom = "Fl ce x enete
+50
+
+yon length btM-4
+
+Yeh) = XCRI HOCK)
+N-point OFTS
+
+Pad xem, Wc) wi Zeros to NL
+
+output-022.png: compare Butterworth filter n=2
+
+——eemfer®
+824 1.41c2mfers + C2mFey?
+
+Me2 fs OK Fox 3.4c
+
+Cae 0.01-4E
+Ry = GO2KA
+C1 = BMF
+Re = G.CZKD
+
+308 down
+0.707
+
+0.6
+
+Bar OK
+
+aviasing y, 2 LHP Ieets-tq
+THOM) 5. bg
+
+14 (42y”
+
+were
+
+fy 34
+4 = \it (35)
+_»—_—_—_——_, = or 0%
+
+3.4) 4
+T+ / Co34)
+
+(oe)
+ad ipv0 He,
+
+aye \ttl Ya)"
+
+NL 347
+
+= 23.06%
+at Gey “
+
+3.4
+
+Fs > 16,000
+keep fox 3, 400 ez
+
+344
+Whe \tt Wey
+
+= = 0.6%
+7 \4
+T+ ( re)
+
+Fs= 40,000, fe
+Faroe
+
+Nat, ahs 34.3%
+
+Te nidher the order,
+
+M22, A%= 8.02% ‘me sharper the transition
+
+“73, 4% = 221%
+M4, 4% 0.56%
+
